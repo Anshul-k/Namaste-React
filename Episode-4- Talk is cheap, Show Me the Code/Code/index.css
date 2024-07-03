@@ -1,0 +1,119 @@
+body{
+    background-color: rgb(245, 245, 245);
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+.BodyContainer{
+    padding: 2rem;
+    padding-top: 6rem;
+    background-color: white;
+}
+
+.Search{
+    margin: 1rem;
+}
+
+.Res-Container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.Res-Card{
+    display: flex;
+    flex-direction: column;
+    min-height: 24rem;
+    width: 24rem;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 18px -10px rgba(0,0,0,4);
+}
+
+.Res-Card:hover{
+    cursor: pointer;
+    box-shadow: 1px 4px 22px -8px rgba(0,0,0,4);
+}
+
+.Res-Image{
+    height: 18rem;
+    width: 100%;
+    max-width: 24rem;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.Res-Card-Content{
+    padding: 1rem;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.Res-Name-Container{
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Res-Name{
+    font-size: 1rem;
+}
+
+.Res-Details{
+    margin: 0.5rem 0 1rem 0;
+    display: flex;
+    gap: 1rem;
+    font-size: medium;
+}
+
+.Res-Cuisine{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 0.3rem;
+}
+
+.Header{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0px 2px 16px -10px rgba(0,0,0,4);
+    position: fixed;
+    width: 100%;
+    height: 6rem;
+}
+
+.Logo{
+    height: 6rem;
+    border-radius: 50%;
+}
+
+.NavItems{
+    margin: 0 5rem;
+}
+
+.NavItems > ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.NavItems > ul > li{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0.5rem;
+    padding: 0.6rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.Cart{
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+}
+
