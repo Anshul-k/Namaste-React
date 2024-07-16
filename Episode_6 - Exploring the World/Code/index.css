@@ -1,0 +1,275 @@
+body{
+    background-color: rgb(245, 245, 245);
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+.BodyContainer{
+    padding: 2rem;
+    padding-top: 6rem;
+    background-color: white;
+}
+
+.Search{
+    margin: 1rem;
+}
+
+.Res-Container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.Res-Card{
+    display: flex;
+    flex-direction: column;
+    min-height: 24rem;
+    width: 24rem;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 18px -10px rgba(0,0,0,4);
+}
+
+.Res-Card:hover{
+    cursor: pointer;
+    box-shadow: 1px 4px 22px -8px rgba(0,0,0,4);
+}
+
+.Res-Image{
+    height: 18rem;
+    width: 100%;
+    max-width: 24rem;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.Res-Card-Content{
+    padding: 1rem;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.Res-Name-Container{
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.Res-Name{
+    font-size: 1rem;
+}
+
+.Res-Details{
+    margin: 0.5rem 0 1rem 0;
+    display: flex;
+    gap: 1rem;
+    font-size: medium;
+}
+
+.Res-Cuisine{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 0.3rem;
+}
+
+.Header{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0px 2px 16px -10px rgba(0,0,0,4);
+    position: fixed;
+    width: 100%;
+    height: 6rem;
+}
+
+.Logo{
+    height: 6rem;
+    border-radius: 50%;
+}
+
+.NavItems{
+    margin: 0 5rem;
+}
+
+.NavItems > ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.NavItems > ul > li{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0.5rem;
+    padding: 0.6rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.Cart{
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+}
+
+.filter-btn{
+  margin: 0.7rem;
+  padding: 1rem 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #fff;
+  border-radius: 0.8rem;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.filter-btn:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.filter-btn:active {
+  transform: scale(0.95);
+}
+
+.Shimmer-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem;
+    padding-top: 8.2rem;
+}
+
+.Shimmer-card{
+    display: flex;
+    flex-direction: column;
+    min-height: 24rem;
+    width: 24rem;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 18px -10px rgba(0,0,0,4);
+}
+
+.media{
+    height: 18rem;
+}
+
+.title-line {
+    height: 24px;
+    margin: 0.5rem;
+    margin-bottom: 12px;
+    border-radius: 20px;
+}
+
+.end {
+    width: 40%;
+  }
+
+.shimmerBG {
+    animation-duration: 2.2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: shimmer;
+    animation-timing-function: linear;
+    background: #b7b7b7;
+    background: linear-gradient(to right, #F6F6F6 8%, #F0F0F0 18%, #F6F6F6 33%);
+    background-size: 1200px 100%;
+}
+
+
+@-webkit-keyframes shimmer {
+    0% {
+        background-position: -100% 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -1200px 0;
+    }
+    100% {
+        background-position: 1200px 0;
+    }
+}
+
+.login-btn {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: 5rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(2rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.login-btn:hover,
+.login-btn:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.login-btn:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+.filter{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.Search-conatiner{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+}
+
+.Search-Input{
+    min-width: 30rem;
+    border-radius: 5rem;
+    border: 1px solid rgb(61, 61, 61);
+    padding: 1rem;
+}
+
