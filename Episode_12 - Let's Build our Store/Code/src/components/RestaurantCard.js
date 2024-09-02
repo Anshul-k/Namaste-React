@@ -18,13 +18,13 @@ const RestaurantCard = (props) => {
           className="truncated2 pt-1 text-gray-700"
           style={{ wordBreak: "break-all", width: "fit-content" }}
         >
-          {cuisines.join(",")}
+          {cuisines?.join(",")}
         </h4>
         <h4 className="font-bold pt-2">{sla.slaString}</h4>
         <div className="flex gap-5 items-center pt-2">
           <h4 className="flex gap-1 bg-orange-400 rounded-md p-1 text-white items-center">
             <i className="fa fa-star" aria-hidden="true"></i>
-            {avgRating.toFixed(1)}
+            {avgRating?.toFixed(1)}
           </h4>
           <p className="text-[6px]">
             <i className="fa fa-circle" aria-hidden="true"></i>
