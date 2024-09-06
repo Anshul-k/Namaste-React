@@ -1,0 +1,455 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.truncated {
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+.truncated2{
+    display: -webkit-box;
+    line-clamp: 1;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;   
+}
+
+.shimmerBG {
+    animation-duration: 2.2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: shimmer;
+    animation-timing-function: linear;
+    background: #b7b7b7;
+    background: linear-gradient(to right, #F6F6F6 8%, #F0F0F0 18%, #F6F6F6 33%);
+    background-size: 1200px 100%;
+}
+
+
+@-webkit-keyframes shimmer {
+    0% {
+        background-position: -100% 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -1200px 0;
+    }
+    100% {
+        background-position: 1200px 0;
+    }
+}
+
+
+/* body{
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+.BodyContainer{
+    padding: 2rem;
+    padding-top: 6rem;
+    background-color: white;
+}
+
+.Search{
+    margin: 1rem;
+}
+
+.Res-Container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.Res-Card{
+    display: flex;
+    flex-direction: column;
+    min-height: 24rem;
+    width: 24rem;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 18px -10px rgba(0,0,0,4);
+}
+
+.Res-Card:hover{
+    cursor: pointer;
+    box-shadow: 1px 4px 22px -8px rgba(0,0,0,4);
+}
+
+.Res-Image{
+    object-fit: cover;
+    height: 18rem;
+    width: 100%;
+    max-width: 24rem;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.Res-Card-Content{
+    padding: 1rem;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.Res-Name-Container{
+    margin-top: 1rem;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.Res-Name{
+    font-size: 1rem;
+}
+
+.Res-Details{
+    margin: 0.5rem 0 1rem 0;
+    display: flex;
+    gap: 1rem;
+    font-size: medium;
+}
+
+.Res-Cuisine{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 0.3rem;
+}
+
+.Header{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0px 2px 16px -10px rgba(0,0,0,4);
+    position: fixed;
+    width: 100%;
+    height: 6rem;
+    z-index: 99999;
+}
+
+.Logo{
+    height: 6rem;
+    border-radius: 50%;
+}
+
+.NavItems{
+    margin: 0 5rem;
+}
+
+.NavItems > ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.NavItems > ul > li{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0.5rem;
+    padding: 0.6rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.Cart{
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+}
+
+.filter-btn{
+  margin: 0.7rem;
+  padding: 1rem 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #fff;
+  border-radius: 0.8rem;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.filter-btn:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.filter-btn:active {
+  transform: scale(0.95);
+}
+
+.Shimmer-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem;
+    padding-top: 8.2rem;
+}
+
+.Shimmer-card{
+    display: flex;
+    flex-direction: column;
+    min-height: 24rem;
+    width: 24rem;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 18px -10px rgba(0,0,0,4);
+}
+
+.Shimmer-menu-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 14rem;
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 18px -10px rgba(0,0,0,4);
+}
+
+.media{
+    height: 18rem;
+}
+
+.title-line {
+    height: 24px;
+    margin: 0.5rem;
+    margin-bottom: 12px;
+    border-radius: 20px;
+}
+
+.end {
+    width: 40%;
+  }
+
+.shimmerBG {
+    animation-duration: 2.2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: shimmer;
+    animation-timing-function: linear;
+    background: #b7b7b7;
+    background: linear-gradient(to right, #F6F6F6 8%, #F0F0F0 18%, #F6F6F6 33%);
+    background-size: 1200px 100%;
+}
+
+
+@-webkit-keyframes shimmer {
+    0% {
+        background-position: -100% 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -1200px 0;
+    }
+    100% {
+        background-position: 1200px 0;
+    }
+}
+
+.login-btn {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: 5rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(2rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.login-btn:hover,
+.login-btn:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.login-btn:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+.filter{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.Search-conatiner{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+}
+
+.Search-Input{
+    min-width: 30rem;
+    border-radius: 5rem;
+    border: 1px solid rgb(61, 61, 61);
+    padding: 1rem;
+}
+
+.About{
+    padding-top: 6rem;
+}
+.Contact{
+    padding-top: 6rem;
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.restaurant-menu{
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-header-container{
+    display: flex;
+    width: 50%;
+    margin-top: 2rem;
+    padding: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 0.5rem;
+}
+
+.menu-header-content{
+    width: 100%;
+}
+
+.menu-item-container{
+    width: 50%;
+    padding: 2rem;
+}
+
+.menu-container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.menu-container-heading{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-container-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #5b5959;
+}
+
+.menu-chevron{
+    text-decoration: none;
+    border: none;
+    width: 4rem;
+    height: 2rem;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.menu-item-content-container{
+    margin-top: 2rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menu-item-button{
+    background: rgb(255, 255, 255);
+    border: 1px solid rgba(2, 6, 12, 0.15);
+    height: 40px;
+    border-radius: 0.5rem;
+    width: 7rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(40, 44, 63, 0.08) 0px 3px 8px;
+    cursor: pointer;
+    bottom: 1.3rem;
+    font-size: medium;
+    margin-left: 0.48rem;
+}
+.menu-item-button:hover{
+    background: rgb(231, 229, 229);
+}
+
+.truncated {
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+.truncated2{
+    display: -webkit-box;
+    line-clamp: 1;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;   
+}
+
+.user-card{
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+}
+   */
